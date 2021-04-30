@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pregunta.love</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: rgb(207, 166, 255);
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Jeje, ya sabía, pero sabes me gusta caerte gordo :3.                                 Pd: Gracias por quererme 🥰');
+            
+        }
+       
+        function mueveElBoton(){
+            width = 1200;
+            height = 400;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>¿Aún me quieres?</h3>
+    <br>
+    <a class="btnno" href="#" id="btnNo" onmouseover="mueveElBoton()">Si</a>
+    
+<div class="container">
+    <div onclick="accionParaCuandoEllaDigaQueSi()" class="btnsi" id="btnSi">
+    <a href="#">
+    <div class="first">No</div>
+    <div  class="second">Si</div>
+    </a>
+    </div>
+    </div>
+  
+    <img src="photo5156928079841569042.jpg" width="200">
+</body>
+</html>
